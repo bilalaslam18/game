@@ -15,7 +15,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
 
     <TextView
         android:id="@+id/letter"
@@ -27,6 +28,7 @@
         android:text=""
         android:textAlignment="center"
         android:textSize="200sp"
+        android:textColor="#1976D2"
         app:layout_constraintTop_toBottomOf="@+id/home_top"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -45,21 +47,24 @@
             android:id="@+id/sky"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sky" />
+            android:text="Sky"
+            android:backgroundTint="#1976D2"/>
 
         <Button
             android:id="@+id/root"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Root"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#1976D2"/>
 
         <Button
             android:id="@+id/grass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Grass"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#1976D2"/>
 
     </LinearLayout>
 
@@ -76,6 +81,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@+id/buttons_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#1976D2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

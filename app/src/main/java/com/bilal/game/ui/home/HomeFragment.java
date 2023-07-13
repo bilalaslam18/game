@@ -80,7 +80,7 @@ public class HomeFragment extends Fragment {
                 try {
                     if (play_or_pause == 1) {
                         play_or_pause = 0;
-                        message_text.setText("Check your result!");
+                        message_text.setText("Game finished");
                         Helper helper=new Helper();
                         String []ans=helper.converter(historyModels);
 
@@ -89,7 +89,7 @@ public class HomeFragment extends Fragment {
                         play_pause.setText("Start");
 
                     } else {
-                        message_text.setText("Better Luck");
+                        message_text.setText("Let's play");
 
                         // Wait for 5 seconds and create a new question
                         new Handler().postDelayed(new Runnable() {
@@ -115,10 +115,10 @@ public class HomeFragment extends Fragment {
                 if (play_or_pause == 1) {
 
                     if (answerString == "Root Letter") {
-                        message_text.setText("Awesome your answer is right");
+                        message_text.setText("Correct answer");
                         cn++;
                     } else {
-                        message_text.setText("Incorrect! the answer is " + answerString);
+                        message_text.setText("Wrong! the answer is " + answerString);
                     }
 
                     historyModels.add(new HistoryModel("Root Letter",answerString));
@@ -143,10 +143,10 @@ public class HomeFragment extends Fragment {
                 if (play_or_pause == 1) {
 
                     if (answerString == "Sky Letter") {
-                        message_text.setText("Awesome your answer is right");
+                        message_text.setText("Correct answer");
                         cn++;
                     } else {
-                        message_text.setText("Incorrect! the answer is " + answerString);
+                        message_text.setText("Wrong! the answer is " + answerString);
                     }
 
                     historyModels.add(new HistoryModel("Sky Letter",answerString));
@@ -171,10 +171,10 @@ public class HomeFragment extends Fragment {
                 if (play_or_pause == 1) {
 
                     if (answerString == "Grass Letter") {
-                        message_text.setText("Awesome your answer is right");
+                        message_text.setText("Correct answer");
                         cn++;
                     } else {
-                        message_text.setText("Incorrect! the answer is " + answerString);
+                        message_text.setText("Wrong! the answer is " + answerString);
                     }
 
                     historyModels.add(new HistoryModel("Grass Letter",answerString));
